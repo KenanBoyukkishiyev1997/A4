@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
+  <link rel="stylesheet" href="../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="../../assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../assets/css/shared/style.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../assets/css/demo_1/style.css">
+  <!-- End Layout styles -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/newStyle.css">
+</head>
+
+<style>
+  #pagesControllers {
+    display: none;
+    text-align: center;
+  }
+
+  .save {
+    display: none;
+  }
+
+  .td_collopse {
+    background-color: #f2f2f2 !important;
+  }
+
+  .hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 13px;
+  }
+
+  .table td,
+  .table th {
+    padding: 12px;
+  }
+
+  .accounts {
+    color: black;
+  }
+</style>
+
+<body>
+  <div class="container-scroller">
+
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+              <div class="profile-image">
+                <img class="img-xs rounded-circle" src="../../assets/images/faces/face8.jpg" alt="profile image">
+                <div class="dot-indicator bg-success"></div>
+              </div>
+              <div class="text-wrapper">
+                <p class="profile-name">Allen Moreno</p>
+                <p class="designation">Premium user</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Main Menu</li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="menu-icon typcn typcn-document-text"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon typcn typcn-coffee"></i>
+              <span class="menu-title">Basic UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/forms/basic_elements.html">
+              <i class="menu-icon typcn typcn-shopping-bag"></i>
+              <span class="menu-title">Form elements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/charts/chartjs.html">
+              <i class="menu-icon typcn typcn-th-large-outline"></i>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/tables/basic-table.html">
+              <i class="menu-icon typcn typcn-bell"></i>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/talent/talent.html">
+              <i class="menu-icon typcn typcn-bell"></i>
+              <span class="menu-title">Talent</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/icons/font-awesome.html">
+              <i class="menu-icon typcn typcn-user-outline"></i>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon typcn typcn-document-add"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/blank-page.html"> Blank Page </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/login.html"> Login </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/register.html"> Register </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/error-404.html"> 404 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/samples/error-500.html"> 500 </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <table class=" table  table-condensed">
+                    <thead>
+                      <tr>
+                        <th class="disableSort disableFilterBy">Image</th>
+                        <th class="disableSort disableFilterBy">Full Name</th>
+                        <th class="disableSort disableFilterBy">Email</th>
+                        <th class="disableSort disableFilterBy">Total Xerc</th>
+                        <th>Phone</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="open_tr" onclick="myFunction()">
+                        <td class="prova">
+                          <img id="img" src="#" alt="">
+                          <input type='file' id="upload" onchange="readURL(this)" />
+                        </td>
+                        <td class="prova">Sara Jackson</td>
+                        <td class="prova">kanan@outlook.com </td>
+                        <td class="prova">
+                          $100
+
+                        </td>
+                        <td class="prova">0554562007 </td>
+
+                      </tr>
+                      <tr class="tr_collopse">
+                        <td class="td_collopse" colspan="9">
+                          <div>
+                          
+                            
+                           
+
+                            <p onclick="">Order Table <span><i class="fa fa-long-arrow-down"></i></span></p>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Who Ordered</th>
+                                  <th>Status</th>
+                                  <th>Price</th>
+                                  <th>Data</th>
+                                  <th>Act</th>
+                                </tr>
+                              </thead>
+                              <tbody >
+                                <tr>
+                                  <td>
+                                    <p>Kenan Boyukkishiyev</p>
+                                  </td>
+                                  <td>new</td>
+                                  <td>$20</td>
+                                  <td>18.11.2020</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Kamran Boyukkishiyev</p>
+                                  </td>
+                                  <td>finish</td>
+                                  <td>$20</td>
+                                  <td>18.12.2020</td>
+                                  <td> <a href="#"><i class="fa fa-play"></i></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                           
+                 
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com
+              2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free Bootstrap admin templates
+              from <a href="https://www.bootstrapdash.com/bootstrap-admin-template/"
+                target="_blank">Bootstrapdash.com</a></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../assets/js/shared/off-canvas.js"></script>
+  <script src="../../assets/js/shared/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+  <!-- End custom js for this page-->
+
+  <script type="text/javascript" src="../../assets/js/tableManager.js"></script>
+  <script type="text/javascript">
+    function readURL(input) {
+      var url = input.value;
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $('#img').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      } else {
+        $('#img').attr('src', '../../assets/images/faces/face8.jpg');
+      }
+    }
+  </script>
+  <script>
+    
+    var index, table = document.getElementById('myTable');
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        table.rows[i].cells[1].onclick = function()
+        {
+                index = this.parentElement.rowIndex;
+                table.deleteRow(index);
+            
+            console.log(index);
+        };
+        
+    }
+
+</script>
+  <script>
+  function addTable() {
+    var table = document.getElementById("myTable");
+  var row = table.insertRow(1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = ` <select >
+                                <option>Firefox</option>
+                                <option>Chrome</option>
+                                <option>Internet Explorer</option>
+                                <option>Safari</option>
+                              </select>`;
+  cell2.innerHTML =`<i class="trash-table fa fa-trash" ></i>`;
+}
+
+
+     
+
+    $('.edit').click(function () {
+      $(this).hide();
+      $('.accounts').attr('contenteditable', 'true');
+      $('.save').show();
+    });
+
+    $('.save').click(function () {
+      $(this).hide();
+      $('.accounts').removeAttr('contenteditable');
+      $('.edit').show();
+    });
+
+    $('.dropEdit').click(function () {
+      $(this).hide();
+      $('.dropSave').show();
+    });
+
+    $('.dropSave').click(function () {
+      $(this).hide();
+      $('.dropEdit').show();
+    });
+  </script>
+
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementsByClassName("tr_collopse")[0];
+      if (x.style.display === "none") {
+        x.style.display = "contents";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function subCategory() {
+      var x = document.getElementsByClassName("div_collopse")[0];
+      if (x.style.display === "none") {
+        x.style.display = "contents";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+
+    function toggleRadio(flag) {
+      if (!flag) {
+        document.getElementById('customMessageTextArea').setAttribute("disabled", "true");
+      } else {
+        document.getElementById('customMessageTextArea').removeAttribute("disabled");
+        document.getElementById('customMessageTextArea').focus();
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>
